@@ -1,0 +1,159 @@
+.form-account {
+	padding: 0 20px;
+
+	.form__group {
+		position: relative;
+		margin-bottom: 15px;
+
+		.col-50 {
+			&:last-child {
+				.form-radio {
+					margin-right: 0;
+				}
+			}
+		}
+
+		.radio {
+			opacity: 0;
+		}
+
+		.icon-radio {
+			position: absolute;
+			left: 45px;
+			top: 50%;
+			height: 30px;
+			width: 15px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			transform: translateY(-50%);
+
+			&.icon-radio--men {
+				background-image: url('../img/icon/icon-men.png');
+			}
+
+			&.icon-radio--woman {
+				background-image: url('../img/icon/icon-woman.png');
+			}
+
+			
+		}
+
+		.icon-radio-smooke {
+			position: absolute;
+			left: 25px;
+			top: 50%;
+			height: 15px;
+			width: 15px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			transform: translateY(-50%);
+			&.icon-radio--smooke {
+				background-image: url('../img/icon/icon-smooke.png');
+			}
+
+			&.icon-radio--not-smooke {
+				left: 15px;
+				background-image: url('../img/icon/icon-no-smooke.png');
+			}
+		}
+
+		.icon-text {
+			margin-left: 10px;
+			font-family: $montserrat;
+			font-size: 0.6em;
+			text-transform: uppercase;
+			color: #9b9b9b;
+		}
+ 
+		.form-radio { 
+			text-align: center;
+			position: relative;
+			display: block; 
+			padding: 0;
+			margin-right: 10px;
+			transition: all .3s ease-in-out;
+
+			&.checked {
+				background: red;
+			}
+		}
+
+		.item-content {
+			padding-right: 0;
+		}
+
+		.icon {
+			position: absolute;
+		    right: 0;
+		    top: 60%;
+		    width: 20px;
+		    height: 20px;
+		    background-size: 19px;
+		    background-repeat: no-repeat;
+		    transform: translateY(-50%);
+
+			&.icon--calendar {
+				background-image: url('../img/icon/icon-calendar.png');
+
+			}
+		}
+	}
+	.form-control {
+		width: 100%;
+		&.form-control--border {
+			border-bottom: 1px solid #f7f5f6;  
+		}
+
+		&.form-control--select {
+			padding: 10px 5px;
+			border: none;
+			border-bottom: 1px solid #f7f5f6;
+		}
+	}
+}
+
+.ionic_datepicker_popup {
+	.popup-body {
+		.selected_date_full {
+			background-color: #da281c !important;
+		}
+	} 
+}
+
+.ionic_datepicker_popup {
+	.popup-buttons {
+		button {
+			background-color: #da281c !important;
+		}
+	}
+}
+
+.ionic_datepicker_popup {
+	.popup-body {
+		.button-clear {
+			color: #da281c !important;
+		}
+	}
+}
+
+.ionic_datepicker_popup {
+	.selected_date {
+		background-color: #da281c !important;
+	}
+}
+
+.ionic_datepicker_popup {
+	.today {
+		border: 1px solid #da281c !important;
+	}
+}
+
+.ionic_datepicker_popup .popup-body .month_select:after, 
+.ionic_datepicker_popup .popup-body .year_select:after {
+	color: #da281c !important;
+}
+
+.ionic_datepicker_popup .popup-body .month_select, 
+.ionic_datepicker_popup .popup-body .year_select {
+	border-bottom: 1px solid #da281c !important;
+}

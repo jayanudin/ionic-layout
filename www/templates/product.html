@@ -1,0 +1,76 @@
+<ion-view hide-nav-bar="true">
+	<ion-content>
+	    <button class="btn-block btn-block--red" ng-click="backHome();"><i class="fa fa-angle-left left" aria-hidden="true"></i> Produk, asuransi tambahan & dana </button>
+
+		    <div class="banner">
+		        <div class="banner__caption">
+		            <div class ="row">
+		                <div class="col col-50">
+		                    <div class="caption-wrap">
+		                    	<h3>Ivonne Amelia Lingga</h3>
+		                    </div>
+		                </div>
+		                <div class="col col-50">
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		                        tempor incididunt ut labore et dolore magna aliqua.
+		                    </p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="site-content">
+		    	<div class="product-wrap">
+			        <div class="heading heading--black text-center">
+			            <h3>Pilih Produk & Asuransi Tambahan</h3>
+			        </div>
+			        <ion-list>
+			        	<div class="row">
+						    <div class="accordion" ng-repeat="group in groups">
+
+						        <ion-item class="item-stable accordion__heading accordion__heading--gray" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+						            <h3>PRUlink Assurance Account (PAA)</h3>
+						            <i class="fa fa-caret-down" aria-hidden="true"></i>
+						        </ion-item>
+						        <!--Accordion content start-->
+						        <ion-item class="item-accordion" ng-show="isGroupShown(group)"  ng-repeat="account in accounts">
+						            <ion-list>
+									   	<ion-item>
+									      	<div class="row">
+									      		<div class="col-80">
+									      			{{account.account_name}}
+									      		</div>
+									      		<div class="col-20">
+									      			<button class="btn btn--remove" data-ng-click="removeAccount($index);">Remove</button>
+									      		</div>
+									      	</div>
+									   	</ion-item>
+						        </ion-item>
+						    </div>
+					    </div>
+					    <div class="row">
+					    	<div class="btn-add-wrap">
+					    		<button class="btn btn-add" modal-select="" ng-model="account" options="selectables" modal-title="Select Account">
+							        Select it
+							        <div class="option">
+							          {{option.account_name}}
+							        </div>
+							    </button>
+					    	</div>
+					    </div>
+
+					    <div class="row">
+					    	<form class="form">
+					    		
+					    		<div class="form__group">
+					    			<label>Alasan Rekomendasi dari tenaga pemasar</label>
+					    			<input type="text" name="name" ng-model="accounts.account_name" placeholder="Enter" class="form-control">
+					    		</div>
+					    	</form>
+					    </div>
+					</ion-list>
+			    </div>
+		    </div>
+	</ion-content>
+
+	<button ng-click="pushAccount();" class="btn-block btn-block--red btn-block--fixed"> Lanjutkan <i class="fa fa-angle-right right" aria-hidden="true"></i></button>
+</ion-view>

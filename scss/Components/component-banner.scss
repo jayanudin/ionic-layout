@@ -1,0 +1,39 @@
+.banner {
+	position: relative;
+	height: 200px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+
+	&:after {
+		position: absolute;
+		content: "";
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: #000;
+		opacity: .6;
+	}
+
+	.banner__caption {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+
+		h3 {
+			font-family: $montserrat;
+			font-size: 1.5em;
+			font-weight: 600;
+			color: #ffffff;
+		}
+		
+		p {
+			font-family: $montserrat;
+			font-size: 0.9em;
+			font-weight: normal;
+			color: #ffffff;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.btn-block {
+	width: 100%;
+	display: block;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+	padding: 10px;
+
+	&.btn-block--fixed {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	&.btn-block--red {
+		background: #da281c;
+		
+
+		&.icon-left {
+			&:before {
+				float: left;
+			}
+		}
+	}
+
+	&.btn-block--gray {
+		background: #a9aeb2;
+	}
+}
+
+.btn {
+	&.btn--remove {
+		font-family: $montserrat;
+		font-size: 0.8em;
+		background: none;
+		border: none;
+		color: #da281c;
+	}
+}

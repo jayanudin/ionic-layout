@@ -1,0 +1,104 @@
+<ion-view hide-nav-bar="true">
+	<ion-content>
+		<!-- <button class="button button-positive" modal-select="" ng-model="someModel" options="selectables" modal-title="Select a person">
+	        Select it
+	        <div class="option">
+	          {{option.name}}
+	        </div>
+	    </button>
+	    <h3>Selected value: {{someModel.name}}</h3> -->
+	    
+	    	<button class="btn-block btn-block--red" ng-click="backHome();">Tentang Nasabah <i class="fa fa-angle-right right" aria-hidden="true"></i></button>
+		    <div class="site-content">
+		    	<div class="heading heading--black text-center">
+			        <h3>Ceritakan Mengenai Calon Tertanggung</h3>
+			    </div>
+			   
+		    	<div class="form-account">
+	    			<div class="form__group">
+	    				<label>Nama</label>
+	    				<input type="text"  name="nama_nasabah" class="form-control form-control--border" placeholder="Nama Lengkap" required ng-model="nasabah.nama_nasabah">
+	    			</div>
+	    			<div class="form__group">
+	    				<label>Jenis Kelamin</label>
+	    				<div class="row">
+	    					<div class="col-50">
+	    						<label class="form-radio item item-radio">
+	    							<input type="radio" name="jk" ng-model="nasabah.jk" class="radio" value="pria">
+	    							<div class="radio-content">
+	    								<div class="item-content disable-pointer-events">
+	    									<span class="icon-text">Pria</span>
+	    									<span class="icon-radio icon-radio--men"></span>
+	    								</div>
+	    							</div>
+	    							
+	    							
+	    						</label>
+	    					</div>
+	    					<div class="col-50">
+	    						<label class="form-radio item item-radio">
+	    							<input type="radio" name="jk" ng-model="nasabah.jk" class="radio" value="wanita">
+	    							<div class="radio-content">
+	    								<div class="item-content disable-pointer-events">
+	    									<span class="icon-radio icon-radio--woman"></span>
+	    									<span class="icon-text" >Wanita</span>
+	    								</div>
+	    							</div>
+	    							
+	    						</label>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="form__group">
+	    				<label>Perokok</label>
+	    				<div class="row">
+	    					<div class="col-50">
+	    						<label class="form-radio item item-radio">
+	    							<input type="radio" name="perokok" ng-model="nasabah.perokok" class="radio" value="perokok">
+
+	    							<div class="radio-content">
+	    								<div class="item-content disable-pointer-events">
+	    									<span class="icon-radio-smooke icon-radio--smooke"></span>
+	    									<span class="icon-text">Saya Perokok</span>
+	    								</div>
+	    							</div>
+
+	    							
+	    						</label>
+	    					</div>
+	    					<div class="col-50">
+	    						<label class="form-radio item item-radio">
+	    							<input type="radio" name="perokok" ng-model="nasabah.perokok" class="radio" value="nonperokok">
+
+	    							<div class="radio-content">
+	    								<div class="item-content disable-pointer-events">
+	    									<span class="icon-radio-smooke icon-radio--not-smooke"></span>
+	    									<span class="icon-text">Saya Bukan Perokok</span>	
+	    								</div>
+	    							</div>
+
+	    							
+	    						</label>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="form__group">
+	    				<label>Tanggal Lahir</label>
+	    				<input type="text" class="form-control form-control--border" ng-click="openDatePicker()" ng-change="nasabah.tanggal_lahir=selectedDate" ng-model="nasabah.tanggal_lahir=selectedDate" placeholder="Tanggal Lahir">
+	    				<span class="icon icon--calendar"></span>
+	    			</div>
+	    			<div class="form__group">
+	    				<select class="form-control form-control--select" name="pekerjaan" ng-model="nasabah.pekerjaan">
+	    					<option value="">Pekerjaan</option>
+	    					<option value="pekerjaan 1">Pekerjaan 1</option>
+	    					<option value="pekerjaan 2">Pekerjaan 2</option>
+	    				</select>
+	    			</div>
+		    		
+		    	</div>
+		    </div>
+		    
+	 	
+	</ion-content>
+	<button type="submit" ng-click="save();" class="btn-block btn-block--gray btn-block--fixed"> Lanjutkan <i class="fa fa-angle-right right" aria-hidden="true"></i></button>
+</ion-view>

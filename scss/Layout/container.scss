@@ -1,0 +1,50 @@
+.container {
+	position: relative;
+}
+
+.site-content {
+	position: relative;
+}
+
+.heading {
+	margin: 20px 0;
+	h3 {
+		font-family: $montserrat;
+	}
+	&.heading--black {
+		h3 {
+			font-size: 1.2em;
+			color: #000000;
+			font-weight: 800;
+		}
+	}
+}
+
+.dashboard {
+	margin-top: 80px;
+
+	a {
+		text-decoration: none;
+		color: none;  
+	}
+	.box {
+		text-align: center;
+		background: #444;
+		height: 120px;
+		width: 100%;
+
+		h4 {
+			line-height: 120px; 
+			color: #fff;
+			font-size: 1em;
+			font-family: $montserrat;
+		}
+
+	}
+
+	button {
+		width: 100%;
+    	background: none;
+    	border: none;
+	}
+}

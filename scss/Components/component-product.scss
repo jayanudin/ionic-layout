@@ -1,0 +1,34 @@
+.list .item.item-accordion {
+	padding: 0;
+  	transition: 0.09s all linear;
+}
+
+.list .item.item-accordion.ng-hide {
+  	line-height: 0px;
+}
+
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  	display: block !important;
+}
+
+.btn-add-wrap {
+	width: 100%;
+
+	.btn-add {
+		font-family: $montserrat;
+	    background: #da281c;
+	    font-size: 0.9em;
+	    font-weight: normal;
+	    width: 100%;
+	    margin: 0;
+	    border: none;
+	    color: white;
+	    padding: 10px;
+		
+	}
+
+	i {
+		padding-left: 10px;
+	}
+}
